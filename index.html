@@ -9,12 +9,29 @@
 
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+		<h1>Kamień, papier, nożyce</h1>
+
+		<p>Witaj na stronie prostej i popularnej gry. Tutaj możesz grać z komputerem grę kamień, papier, nożyce.</p>
+
+		<div class="box">
+			<div id="result"></div>
+			<div id="buttons">
+				<button id="button-rock">Kamień</button>
+				<button id="button-paper">Papier</button>
+				<button id="button-scissors">Nożyce</button>
+			</div>
+			<div id="messages"></div>
 		</div>
-		<div id="messages"></div>
+
+		<h2>Instrukcja</h2>
+
+		<ul>
+			<li>Na górze, po każdej rundzie, zostanie zapisany aktualny wynik gry. Można z niego odczytać, kto ile razy
+				wygrał. Jeżeli zagrano 10 rund, to gra się kończy i wygrywa ten, kto ma najwięcej punktów.</li>
+			<li>Pod spisem wyniku znajdują się trzy guziki o nazwach "kamień", "papier" i "nożyce". Kliknij jeden z tych
+				guzików, aby wybrać opcję.</li>
+			<li>Na samym dole wyświetlają się informacje, kto wygrał oraz jaką opcję każdy wybrał w danej rundzie.</li>
+		</ul>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

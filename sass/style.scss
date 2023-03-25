@@ -1,0 +1,27 @@
+/* Variables */
+
+$color-one: #fed330;
+$color-two: #5c2c18;
+$color-three: #4cd137;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.7;
+    background-color: $color-one;
+    color: $color-two;
+}
+
+.container {
+    padding: 0 50px 0 50px;
+}
+
+.box {
+    border: solid 10px $color-three;
+}

@@ -1,3 +1,23 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.7;
+  background-color: #fed330;
+  color: #5c2c18;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  padding: 0 50px 0 50px;
+}
+
+.box {
+  border: solid 10px #4cd137;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNMSjs7QURRQTtFQUNJLFNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSx5QkFkUTtFQWVSLGNBZFE7QUNTWjs7QURRQTtFQUNJLHNCQUFBO0FDTEo7O0FEUUE7RUFDSSwwQkFBQTtBQ0xKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
