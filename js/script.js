@@ -1,4 +1,6 @@
 var argButtonName, button_paper, button_rock, button_scissors, argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+var playerWins = 0;
+var computerWins = 0;
 
 /**
  * Describe this function...
@@ -22,16 +24,30 @@ function getMoveName(argMoveId) {
 function displayResult(argPlayerMove, argComputerMove) {
 	console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
 	if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
-		printMessage('Wygrywasz!');
+		printMessage('Wygrywasz rundę!');
+		playerWins += 1;
 	} else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
-		printMessage('Wygrywasz!');
+		printMessage('Wygrywasz rundę!');
+		playerWins += 1;
 	} else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
-		printMessage('Wygrywasz!');
+		printMessage('Wygrywasz rundę!');
+		playerWins += 1;
 	} else if (argPlayerMove == argComputerMove) {
-		printMessage('Remis');
+		printMessage('Remis rundy.');
 	} else {
-		printMessage('Przegrywasz :(');
+		printMessage('Przegrywasz rundę :(');
+		computerWins += 1;
 	}
+	if (playerWins + computerWins == 10) {
+		if (playerWins > computerWins) {
+			printMessage('Wygrałeś grę!');
+		} else if (playerInput < computerWins) {
+			printMessage('Przegrałeś grę :(');
+		} else if (playerWins == computerWins) {
+			printMessage('Remis gry.')
+		}
+	}
+	printResult(playerWins + ' - ' + computerWins);
 	printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
@@ -40,6 +56,7 @@ function displayResult(argPlayerMove, argComputerMove) {
  */
 function buttonClicked(argButtonName) {
 	clearMessages();
+	clearResult();
 	console.log(argButtonName + ' został kliknięty');
 	console.log('wybór ruchu gracza to: ' + playerInput);
 	playerMove = argButtonName;
