@@ -12,6 +12,8 @@ body {
 
 .container {
   padding: 0 50px 0 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .box {
@@ -20,6 +22,21 @@ body {
   padding: 20px;
   margin-bottom: 30px;
   min-height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
-/*# sourceMappingURL=style.css.map */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: #5c2c18;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fed330;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJQTtFQUNJLHNCQUFBO0FDSEo7O0FETUE7RUFDSSxTQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EseUJBWlE7RUFhUixjQVpRO0FDU1o7O0FETUE7RUFDSSxzQkFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtBQ0hKOztBRE1BO0VBQ0ksMEJBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0FDSEo7O0FETUE7RUFDSSxhQUFBO0VBQ0EsdUJBQUE7QUNISjs7QURNQTtFQUNJLFlBQUE7RUFDQSx5QkF0Q1E7RUF1Q1IsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsY0ExQ1E7QUN1Q1oiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
