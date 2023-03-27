@@ -25,7 +25,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
-    min-height: 150px;
+    min-height: 260px;
     display: flex;
     flex-direction: column;
 }
@@ -41,4 +41,11 @@ button {
     border-radius: 10px;
     padding: 10px;
     color: $color-one;
+    margin: 10px;
+}
+
+#result {
+    background-color: $color-three;
+    padding: 0 100px 0 100px;
+    border-radius: 20px;
 }
