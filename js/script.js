@@ -1,9 +1,7 @@
-var playerWins = 0;
-var computerWins = 0;
-
+let playerWins = 0, computerWins = 0;
 const button_rock = document.getElementById('button-rock'),
-button_paper = document.getElementById('button-paper'),
-button_scissors = document.getElementById('button-scissors');;
+	button_paper = document.getElementById('button-paper'),
+	button_scissors = document.getElementById('button-scissors');;
 
 /**
  * Describe this function...
