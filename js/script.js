@@ -1,4 +1,4 @@
-var playerInput, playerMove, randomNumber;
+var playerMove, randomNumber;
 var playerWins = 0;
 var computerWins = 0;
 
@@ -45,7 +45,7 @@ function displayResult(argPlayerMove, argComputerMove) {
 	if (playerWins + computerWins == 10) {
 		if (playerWins > computerWins) {
 			printMessage('Wygrałeś grę!');
-		} else if (playerInput < computerWins) {
+		} else if (playerWins < computerWins) {
 			printMessage('Przegrałeś grę :(');
 		} else if (playerWins == computerWins) {
 			printMessage('Remis gry.')
@@ -62,8 +62,8 @@ function buttonClicked(argButtonName) {
 	clearMessages();
 	clearResult();
 	console.log(argButtonName + ' został kliknięty');
-	console.log('wybór ruchu gracza to: ' + playerInput);
 	playerMove = argButtonName;
+	console.log('wybór ruchu gracza to: ' + playerMove);
 	console.log('ruch gracza to: ' + playerMove);
 	randomNumber = Math.floor(Math.random() * 3 + 1);
 	console.log('wylosowana liczba to: ' + randomNumber);
