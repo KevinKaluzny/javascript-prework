@@ -1,8 +1,9 @@
-var button_paper, button_scissors, argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+var button_scissors, argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 var playerWins = 0;
 var computerWins = 0;
 
-const button_rock = document.getElementById('button-rock');
+const button_rock = document.getElementById('button-rock'),
+button_paper = document.getElementById('button-paper');
 
 /**
  * Describe this function...
@@ -70,7 +71,6 @@ function buttonClicked(argButtonName) {
 	displayResult(playerMove, computerMove);
 }
 
-button_paper = document.getElementById('button-paper');
 button_scissors = document.getElementById('button-scissors');
 button_rock.addEventListener('click', function () { buttonClicked('kamień'); });
 button_paper.addEventListener('click', function () { buttonClicked('papier'); });
