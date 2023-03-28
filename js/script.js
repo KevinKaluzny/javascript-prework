@@ -1,4 +1,4 @@
-var argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+var argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 var playerWins = 0;
 var computerWins = 0;
 
