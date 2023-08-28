@@ -40,6 +40,10 @@ button {
   margin: 10px;
 }
 
+button:hover {
+  background-color: rgb(64, 0, 0);
+}
+
 #result {
   background-color: #4cd137;
   padding: 0 100px 0 100px;
