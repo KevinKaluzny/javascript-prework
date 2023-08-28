@@ -39,7 +39,7 @@ function displayResult(argPlayerMove, argComputerMove) {
 		printMessage('Przegrywasz rundę :(');
 		computerWins += 1;
 	}
-	if (playerWins + computerWins == 10) {
+	if (playerWins == 10 || computerWins == 10) {
 		if (playerWins > computerWins) {
 			printMessage('Wygrałeś grę!');
 		} else if (playerWins < computerWins) {
